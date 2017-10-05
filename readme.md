@@ -1,5 +1,8 @@
+-----
 ## Python Tutorial Notes Summarizing Content From Tutorials Point
 https://www.tutorialspoint.com/python/
+Justin Johnson
+-----
 
 ### Overview
 - interpreted
@@ -9,15 +12,21 @@ https://www.tutorialspoint.com/python/
 - created by Guido Rossum between 1985 - 19990
 - available under GNU GPL
 
+-----
+
 ### Identifieers
 - case sensitive
 - beginning with underscore _ denotes private
 - beginning with 2 undercores __ denotes strongly private
 - beginning with 2 underscores and ending with 2 underscores denotes language sdefined special name
 
+-----
+
 ### Indentation
 - python provides now braces to indicate blocks of code
 - all statements within the block must be indented the same amount
+
+-----
 
 ### Lines & Spaces
 - line continuation char (\) denotes a continued line
@@ -26,6 +35,8 @@ https://www.tutorialspoint.com/python/
  		  item_three
 - triple quotes are used to span string across multi line
 - semi colon can be used to place multiple statements on the same line
+
+-----
 
 ### Suites
 - group of individual statements which make a single bcode block
@@ -36,6 +47,8 @@ https://www.tutorialspoint.com/python/
 		suite		# suite
 	else:			# header
 		suite		# suite
+
+-----
 
 ### Standard Data Types
 - Numbers
@@ -53,6 +66,8 @@ https://www.tutorialspoint.com/python/
 - you can delete reference to a number object using the del statement
 	del var1[,var2[,...,varN]]
 
+-----
+
 ### Data Type Conversion
 - use type name as a function to perform cast, ex) int(x) converts x to int
 - repr(x) converts x to an expression string
@@ -63,18 +78,26 @@ https://www.tutorialspoint.com/python/
 - unichr(x) converts x to unicode character
 - ord(x) converts single char to its integer value
 
+-----
+
 ### Truthy/Falsey
 - any non-zero and non-null values are considered as True
 - zero or null are assumed as False
+
+-----
 
 ### If statement
 - if suite of if clause is single line it may go on same line as header
 	if (a === 5): print 'Hello'
 
+-----
+
 ### Loop Control
 - break statement - terminates loop
 - continue statement - skips remainder of loop body and return to conditional of next iteration
 - pass statement - used when statement is required byt you do not want any command or code to execute
+
+-----
 
 ### Math Functions
 - abs(x)
@@ -91,6 +114,8 @@ https://www.tutorialspoint.com/python/
 - pow(x,y)
 - round(x, [,n]) x rounded to n digits from decimal point
 - sqrt(x)
+
+-----
 
 ### Random Numbers
 - choice(seq) returns random item from list, tuple, or string
