@@ -39,14 +39,16 @@
 -----
 
 ### Suites
-- group of individual statements which make a single bcode block
-- if/while/def/class require a header line and a suite
-	if expression:		# header
-		suite		# suite
-	elif expression:	# header
-		suite		# suite
-	else:			# header
-		suite		# suite
+- group of individual statements which make a single code block  
+- if/while/def/class require a header line and a suite  
+```python
+	if expression:		# header  
+		suite		# suite  
+	elif expression:	# header  
+		suite		# suite  
+	else:			# header  
+		suite		# suite  
+```
 
 -----
 
