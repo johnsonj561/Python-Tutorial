@@ -1,8 +1,7 @@
 -----
 ## Python Tutorial Notes Summarizing Content From Tutorials Point
-
-https://www.tutorialspoint.com/python/
-Justin Johnson
+- https://www.tutorialspoint.com/python/
+- Justin Johnson
 -----
 
 ### Overview
