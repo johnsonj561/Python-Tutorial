@@ -20,9 +20,9 @@
 - beginning with 2 undercores __ denotes strongly private
 - beginning with 2 underscores and ending with 2 underscores denotes language defined special name
 ```python
-_fname		// private
-__lname		// strongly private, achieves privacy by mangling: __lname --> _Classname__lname
-__init__	// language defined special name
+_fname		# private
+__lname		# strongly private, achieves privacy by mangling name
+__init__	# language defined special name
 
 -----
 
@@ -35,8 +35,8 @@ __init__	// language defined special name
 ### Lines & Spaces
 - line continuation char (\\) denotes a continued line
 ```python
-total = item_one + \\ 
-	item_two + \\  
+total = item_one + \
+	item_two + \  
  	item_three  
 ```
 - triple quotes are used to span string across multi line
