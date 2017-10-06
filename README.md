@@ -200,50 +200,50 @@ zfill(width) - intended for numbers, returns leftpadded original string
 isdecimal()
 
 ### List Operations
-len(list) - length
-[1, 2, 3] + [4, 5, 6] = [1, 2, 3, 4, 5, 6]
-['hi'] * 2 = ['hi', 'hi']
-3 in [1, 2, 3] = true
-for x in [1, 2, 3] - iterates list
-cmp(list1, list2)
-max(list)
-min(list)
-list(seq) - converts tuple into list
+len(list) - length  
+[1, 2, 3] + [4, 5, 6] = [1, 2, 3, 4, 5, 6]  
+['hi'] * 2 = ['hi', 'hi']  
+3 in [1, 2, 3] = true  
+for x in [1, 2, 3] - iterates list  
+cmp(list1, list2)  
+max(list)  
+min(list)  
+list(seq) - converts tuple into list  
 
 ### List Methods
-append(obj) - appends object to list
-count(obj) - returns count of how many time obj occurs in list
-extend(seq) - appends contents to list
-index(obj) - returns lowest index in list that obj appears
-pop(obj=list[-1]) - removes and returns last object from list
-remove(obj) - removes object from list
-reverse()
-sort([func]) - sorts objects of list, use compare func if given
+append(obj) - appends object to list  
+count(obj) - returns count of how many time obj occurs in list  
+extend(seq) - appends contents to list  
+index(obj) - returns lowest index in list that obj appears  
+pop(obj=list[-1]) - removes and returns last object from list  
+remove(obj) - removes object from list  
+reverse()  
+sort([func]) - sorts objects of list, use compare func if given  
 
 ### Tuples
-- sequence of immutable python objects, wrapped in parenthesis instead of brackets
-- any set of multiple objects that are comma separated and have no identifying symbols, default to tuples
-  ex) 'abc', 1, 5.56, 'hello', 'world will default to a tuple
+- sequence of immutable python objects, wrapped in parenthesis instead of brackets  
+- any set of multiple objects that are comma separated and have no identifying symbols, default to tuples  
+  ex) 'abc', 1, 5.56, 'hello', 'world will default to a tuple  
 
 ### Tuple Functions
-cmp(tuple1, tuple2)
-len(tuple)
-max(tuple)
-min(tuple)
-tuple(seq) converts list into a tuple
+cmp(tuple1, tuple2)  
+len(tuple)  
+max(tuple)  
+min(tuple)  
+tuple(seq) converts list into a tuple  
 
 ### Dictionary
-- unique keys map to values
-- dictionary values have no restriction, may be any python value
+- unique keys map to values  
+- dictionary values have no restriction, may be any python value  
 
 ### Dictionary Methods
-clear() - removes all elements
-copy() - returns shallow copy
-fromekeys() - creates new dictionary with keys from seq and values set to value
-get(key, default=None)
-has_key(key)
-items() - returns list of dict's key,value tuple pairs
-keys()
-setdefault(key, default=None)
-update(dict2) - adds dict2s key value pairs to dict1
-values() 
+clear() - removes all elements  
+copy() - returns shallow copy  
+fromekeys() - creates new dictionary with keys from seq and values set to value  
+get(key, default=None)  
+has_key(key)  
+items() - returns list of dict's key,value tuple pairs  
+keys()  
+setdefault(key, default=None)  
+update(dict2) - adds dict2s key value pairs to dict1  
+values()   
