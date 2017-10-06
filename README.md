@@ -23,6 +23,7 @@
 _fname		# private
 __lname		# strongly private, achieves privacy by mangling name
 __init__	# language defined special name
+```
 
 -----
 
@@ -48,12 +49,12 @@ total = item_one + \
 - group of individual statements which make a single code block  
 - if/while/def/class require a header line and a suite  
 ```python
-	if expression:		# header  
-		suite		# suite  
-	elif expression:	# header  
-		suite		# suite  
-	else:			# header  
-		suite		# suite  
+if expression:		# header  
+  suite			# suite  
+elif expression:	# header  
+  suite			# suite  
+else:			# header  
+  suite			# suite  
 ```
 
 -----
