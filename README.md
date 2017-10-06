@@ -150,8 +150,6 @@ r/R	raw string - supresses actual meaning of escaped characters
 %o	octal  
 %e	exponential notation  
 %f	floating point real  
--	left justification  
-+	display the sign  
 <sp>	leave a blank space before positive number   
 0	pad from left with zeros (instead of spaces)  
 m.n	m is the min total width and n is number of digits to display after decimal point  
