@@ -34,7 +34,7 @@ __init__	# language defined special name
 def add(x, y):
   print 'function add code block'
   print 'all statements are indented same'
-  return x + 7
+  return x + y
 ```
 
 -----
