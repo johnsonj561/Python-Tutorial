@@ -30,6 +30,12 @@ __init__	# language defined special name
 ### Indentation
 - python provides now braces to indicate blocks of code
 - all statements within the block must be indented the same amount
+```python
+def add(x, y):
+  print 'function add code block'
+  print 'all statements are indented same'
+  return x + 7
+```
 
 -----
 
