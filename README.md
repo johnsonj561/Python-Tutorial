@@ -18,7 +18,11 @@
 - case sensitive
 - beginning with underscore _ denotes private
 - beginning with 2 undercores __ denotes strongly private
-- beginning with 2 underscores and ending with 2 underscores denotes language sdefined special name
+- beginning with 2 underscores and ending with 2 underscores denotes language defined special name
+```python
+_fname		// private
+__lname		// strongly private, achieves privacy by mangling: __lname --> _Classname__lname
+__init__	// language defined special name
 
 -----
 
@@ -30,9 +34,11 @@
 
 ### Lines & Spaces
 - line continuation char (\\) denotes a continued line
-	- total = item_one + \\  
-		  item_two + \\  
- 		  item_three  
+```python
+total = item_one + \\ 
+	item_two + \\  
+ 	item_three  
+```
 - triple quotes are used to span string across multi line
 - semi colon can be used to place multiple statements on the same line
 
@@ -53,15 +59,15 @@
 -----
 
 ### Standard Data Types
-- Numbers
+- Numbers  
 	- supports int, long, float, complex
-- String
-- List
+- String  
+- List  
 	- similar to array, but each item of list can be of different data type
-- Tuple
+- Tuple  
 	- sequential data type, # of values separated by commas, enclosed with parenthesis
 	- considered as a 'read only list'
-- Dictionary
+- Dictionary  
 	- key value pairs, similar to associative array or hash table
 	- unordered
 
@@ -90,8 +96,9 @@
 
 ### If statement
 - if suite of if clause is single line it may go on same line as header
-	if (a === 5): print 'Hello'
-
+```python
+if (a === 5): print 'Hello'
+```
 -----
 
 ### Loop Control
