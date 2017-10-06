@@ -160,7 +160,7 @@ m.n	m is the min total width and n is number of digits to display after decimal 
 - unicode strings stored as 16 bit unicode, larger set of characters
 	denoted with a preceding letter u , ex) u'Hello World'
 
-### Built in String methods
+### Built in String Methods
 capitalize()
 center(width, fillchar) - returns a space padded string with original string centered to a total of width columns
 count(str, beg=0, end=len(str)) - returns total occurences of str within substring
