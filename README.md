@@ -127,77 +127,77 @@
 
 
 ### Escape Characters
-\a	bell or alert
-\a	backspace
-\cx	control-x
-\e	escape
-\f	formfeed
-\n 	newline
-\r	cariage return
-\s	space
-\t	tab
-\v	vertical tab
-r/R	raw string - supresses actual meaning of escaped characters	
-	ex) print r'\n' prints \n , not a new line
+\a	bell or alert  
+\a	backspace  
+\cx	control-x  
+\e	escape  
+\f	formfeed  
+\n 	newline  
+\r	cariage return  
+\s	space  
+\t	tab  
+\v	vertical tab  
+r/R	raw string - supresses actual meaning of escaped characters	  
+	ex) print r'\n' prints \n , not a new line  
 
 ### String Formatting
-%	string format operator
-%c	character
-%s	string conversion
-%i	signed int
-%d	signed int
-%u	unsigned int
-%o	octal
-%e	exponential notation
-%f	floating point real
--	left justification
-+	display the sign
-<sp>	leave a blank space before positive number
-0	pad from left with zeros (instead of spaces)
-m.n	m is the min total width and n is number of digits to display after decimal point
+%	string format operator  
+%c	character  
+%s	string conversion  
+%i	signed int  
+%d	signed int  
+%u	unsigned int  
+%o	octal  
+%e	exponential notation  
+%f	floating point real  
+-	left justification  
++	display the sign  
+<sp>	leave a blank space before positive number   
+0	pad from left with zeros (instead of spaces)  
+m.n	m is the min total width and n is number of digits to display after decimal point  
 
-- normal strings stored internally as 8 bit ascii
-- unicode strings stored as 16 bit unicode, larger set of characters
-	denoted with a preceding letter u , ex) u'Hello World'
+- normal strings stored internally as 8 bit ascii  
+- unicode strings stored as 16 bit unicode, larger set of characters  
+	denoted with a preceding letter u , ex) u'Hello World'  
 
 ### Built in String Methods
-capitalize()
-center(width, fillchar) - returns a space padded string with original string centered to a total of width columns
-count(str, beg=0, end=len(str)) - returns total occurences of str within substring
-decode(encoding)
-encode(encoding)
-endswith(suffic, beg=0, end=len(str)) - returns true if substring ends with suffix
-expandtabs(tabsize=8) - expands tabs in string to multiple spaces
-find(str, beg=0, end=len(str)) - returns starting index of str, or -1 if does not exist
-isalnum() - returns true if string has at least 1 character and all characters are alphanumeric
-isalpha() - returns true if string has at least 1 character and all characters are alphabetic
-isdigit()
-islower()
-isnumeric()
-isspace()
-istitle()
-isupper()
-join(seq) - merge string representations of elements in a sequence into a string
-len(string)
-ljust(width[, fillchar]) - returns space padded string with orig string left justified
-lower()
-lstrp() - removes leading whitespace in string
-maketrans() - returns translation table to be used in translate function
-max(str) - returns max alphabetical char from string
-min(str) - returns min alpha char
-replace(old, new [, max]) - replaces all occureneces of old with new, or at most max occurences if max deined
-rfind(str, beg=0, end=len(str)) - same as find, but searches backwards
-rjust(width [, fillchar])
-rstrip()
-split(str="", num=string.count(str)) - splits string according to delimeter str (or space), returns list of substrings, split inti at most num substrings
-splitlines(num=string.count('\n')) - splits string at all newlines
-startswith(str, beg=0, end=len(str))
-strip([chars])
-swapcase()
-title() - returns titlecased version of string
-upper()
-zfill(width) - intended for numbers, returns leftpadded original string
-isdecimal()
+capitalize()  
+center(width, fillchar) - returns a space padded string with original string centered to a total of width columns  
+count(str, beg=0, end=len(str)) - returns total occurences of str within substring  
+decode(encoding)  
+encode(encoding)   
+endswith(suffic, beg=0, end=len(str)) - returns true if substring ends with suffix  
+expandtabs(tabsize=8) - expands tabs in string to multiple spaces  
+find(str, beg=0, end=len(str)) - returns starting index of str, or -1 if does not exist  
+isalnum() - returns true if string has at least 1 character and all characters are alphanumeric  
+isalpha() - returns true if string has at least 1 character and all characters are alphabetic  
+isdigit()  
+islower()  
+isnumeric()  
+isspace()  
+istitle()  
+isupper()  
+join(seq) - merge string representations of elements in a sequence into a string  
+len(string)  
+ljust(width[, fillchar]) - returns space padded string with orig string left justified  
+lower()  
+lstrp() - removes leading whitespace in string  
+maketrans() - returns translation table to be used in translate function  
+max(str) - returns max alphabetical char from string  
+min(str) - returns min alpha char  
+replace(old, new [, max]) - replaces all occureneces of old with new, or at most max occurences if max deined  
+rfind(str, beg=0, end=len(str)) - same as find, but searches backwards  
+rjust(width [, fillchar])  
+rstrip()  
+split(str="", num=string.count(str)) - splits string according to delimeter str (or space), returns list of substrings, split inti at most num substrings  
+splitlines(num=string.count('\n')) - splits string at all newlines  
+startswith(str, beg=0, end=len(str))  
+strip([chars])  
+swapcase()  
+title() - returns titlecased version of string  
+upper()  
+zfill(width) - intended for numbers, returns leftpadded original string  
+isdecimal()  
 
 ### List Operations
 len(list) - length  
