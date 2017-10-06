@@ -14,7 +14,7 @@
 
 -----
 
-### Identifieers
+### Identifiers
 - case sensitive
 - beginning with underscore _ denotes private
 - beginning with 2 undercores __ denotes strongly private
