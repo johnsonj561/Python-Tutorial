@@ -247,3 +247,124 @@ keys()
 setdefault(key, default=None)
 update(dict2) - adds dict2s key value pairs to dict1
 values() 
+
+
+### Date & Time
+- time module available; time.time() returns ticks since epoch (Jan 1 1970 12:00am)  
+- date arithmetic is easy with ticks, but dates before epoch and in future can not be represented in this way  
+- future cutoff for unix and windows is around 2038    
+- TimeTuple cosists of 9 numbers  
+	(4 digit year, month, day, hour, minute,  
+	second, day of week, day of year, daylight savings)  
+- struct_time structure is equivalent 9 numbers   
+	(tm_year, tm_mon, tm_mday, tm_hour, tm_min,  
+	tm_sec, tm_wday, tm_yday, tm_isdst)  
+- we can format time using asctime()  
+```python
+import time
+
+timeSinceEpoch = time.time()
+localTime = time.localtime(timeSinceEpoch)
+formattedTime = time.asctime(localTime)    // Fri Sep 
+
+```
+
+- calendar module has methods for yearly/monthly calendars
+```python
+import calendar
+
+cal = calendar.month(2008, 1)
+
+print cal
+```
+
+- output:
+```python
+    January 2008
+Mo Tu We Th Fr Sa Su
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 31
+```
+
+### Time Functions  
+altzone() returns offset of local DST timezone, in seconds west of UTC  
+asctime([tupletime]) returns readable 24 character formatted time string  
+clock() returns CPU time as floating point number of seconds, useful for measuring computation costs  
+ctime() similar to asctime()  
+gmtime([secs]) returns a time tuple with UTC time  
+localtime([secs]) returns time tuple with local time  
+mktime(tupletime) returns floating point value representing time since epoch  
+sleep(secs) suspends the calling thread for seconds  
+strftime(fmt[,tupletime]) returns string representation    
+time() returns current time since epoch float  
+tzset() resets the time conversion rules used by the library routines    
+
+### Calendar Functions  
+calender(year,w=2,l=1c=6) returns multiline string representing calendar  
+firstweekday() returns current setting for weekday that starts each week, 0 = Monday  
+isleap() returns true if year is leap year  
+leapdays(y1,y2) returns total number of leap days in the years within range y1 - y2  
+month(year, month,w=2,l=1) returns multiline string with calendar for month of year  
+monthcalendar(year,month) returns list of lists of ints, denoting weeks of month  
+monthrange(year, month) returns 2 ints - code of weekday for first day of month, 2nd is nuber of days in the month  
+prcal(year,w=2,l=1,c=6) like calendar(year,w,l,c)  
+prmonth(year,onth,w=2,l=1) like month(year,month,w,l)  
+setfirstweekday(weekday)  
+timegm(tupletime)  
+weekday(year,month,day) return weekday code for date  
+
+### Other Time Modules
+- datetime module  
+- pytz module  
+- dateutil module  
+
+### Functions
+- all arguments in Python are passed by reference  
+```python
+def foo(name, age):
+  print name + ' ' + str(age)
+
+# keyword params, order does not matter
+foo(age=20, name='Justin')
+
+# argument age has default value 25
+def bar(name, age=25):
+  print name + ' ' + str(age)
+
+# varible length arguments are denoted with asterik * placed before the variable name
+# the variable is tuple that remains empty if no additional args are specified
+def printDetails(detail, *additionalDetails):
+  print detail
+  for d in additionalDetails:
+    print d 
+```
+- anonymous functions are not defined, but are created using keyword lambda in place
+- lambda return just one value, cannot contain multiple expressions
+- anonmyous function cannot be a direct call to print because lamda requires an expression
+- lamda functions have their own local namespace and cannot access variables not in param list or not on global namespace
+```python
+sum = lamda arg1, arg2: arg1 + arg2;
+
+print 'Result: ', sum(10, 20)
+print 'Result: ', sum(100, 200)
+```
+- return statement optionally passes back an expression to caller  
+- return statement with no arguments is same as return None  
+
+### Variable Scope
+- variables defined inside a function body have local scope
+- variables defined outside of a function body have global scope
+
+### Modules
+
+
+
+
+
+
+
+	
+
