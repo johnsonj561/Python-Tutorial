@@ -237,16 +237,16 @@ tuple(seq) converts list into a tuple
 - dictionary values have no restriction, may be any python value
 
 ### Dictionary Methods
-clear() - removes all elements
-copy() - returns shallow copy
-fromekeys() - creates new dictionary with keys from seq and values set to value
-get(key, default=None)
-has_key(key)
-items() - returns list of dict's key,value tuple pairs
-keys()
-setdefault(key, default=None)
-update(dict2) - adds dict2s key value pairs to dict1
-values() 
+clear() - removes all elements  
+copy() - returns shallow copy  
+fromekeys() - creates new dictionary with keys from seq and values set to value  
+get(key, default=None)  
+has_key(key)  
+items() - returns list of dict's key,value tuple pairs  
+keys()  
+setdefault(key, default=None)  
+update(dict2) - adds dict2s key value pairs to dict1  
+values()   
 
 
 ### Date & Time
