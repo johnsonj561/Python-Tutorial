@@ -354,12 +354,60 @@ print 'Result: ', sum(100, 200)
 - return statement optionally passes back an expression to caller  
 - return statement with no arguments is same as return None  
 
+----- 
+
 ### Variable Scope
 - variables defined inside a function body have local scope
 - variables defined outside of a function body have global scope
 
-### Modules
+-----
 
+### Modules
+- grouping related code into modules improves reuseability  
+- module is Python object with arbitrarily named attributes that can be referenced  
+- keyword import is used to import modules  
+- keyword from allows the import of specific attributes from a module  
+- Python interpreter searches for the module in:  
+	- current directory    
+	- if not found, then each directory in shell variable PYTHONPATH  
+	- else Python checks the default path (usr/local/lib/python)  
+- module search path is stored in system module sys.path variable  
+
+-----
+
+### Namespaces
+- namespace is a dictionary of variable names (keys) and their correspondign values  
+- Python statement can access variables in local namespace and in global namespace  
+- if local namespace and global namespace have same name, then local variable will shadow global variable  
+- Python assumes any variable assigned a value in a function is local  
+- dir() returns sorted list of strings containing the names defined by a module  
+	- list contains names of all modules, variables, and functions defined within the module  
+```python
+import math
+
+content = dir(math)
+
+print content
+```
+- Outputs:  
+```python
+['__doc__', '__file__', '__name__', 'acos', 'asin', 'atan', 
+'atan2', 'ceil', 'cos', 'cosh', 'degrees', 'e', 'exp', 
+'fabs', 'floor', 'fmod', 'frexp', 'hypot', 'ldexp', 'log',
+'log10', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 
+'sqrt', 'tan', 'tanh']
+```
+- globals() and locals() return the names in the given namespace based on where function is evoked    
+- reload(mod_name) used to re-execute the modules code, as module code is only executed once when loaded  
+
+-----
+
+### Packages
+- package is hierarchical file directory structure that defines a single Python application environment  
+- consists of modules, subpackages, sub-subpackages, etc    
+- consider a directory with multiple python files named MyModules   
+	- in root of directory, create a file __init__.py such that it imports all components to be exposed  
+	- then, the directory MyModules can be imported as 'import MyModules' and all individual files/components in MyModules/ will be made available  
 
 
 
