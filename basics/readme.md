@@ -125,6 +125,7 @@
 - shuffle(lst) randomizes the items of a list in place
 - uniform(x, y) random float r such that x is less than or equal to r and r is less than y
 
+-----
 
 ### Escape Characters
 \a	bell or alert
@@ -139,6 +140,8 @@
 \v	vertical tab
 r/R	raw string - supresses actual meaning of escaped characters	
 	ex) print r'\n' prints \n , not a new line
+
+-----
 
 ### String Formatting
 %	string format operator
@@ -159,6 +162,8 @@ m.n	m is the min total width and n is number of digits to display after decimal 
 - normal strings stored internally as 8 bit ascii
 - unicode strings stored as 16 bit unicode, larger set of characters
 	denoted with a preceding letter u , ex) u'Hello World'
+
+-----
 
 ### Built in String methods
 capitalize()
@@ -199,6 +204,8 @@ upper()
 zfill(width) - intended for numbers, returns leftpadded original string
 isdecimal()
 
+-----
+
 ### List Operations
 len(list) - length
 [1, 2, 3] + [4, 5, 6] = [1, 2, 3, 4, 5, 6]
@@ -210,6 +217,8 @@ max(list)
 min(list)
 list(seq) - converts tuple into list
 
+-----
+
 ### List Methods
 append(obj) - appends object to list
 count(obj) - returns count of how many time obj occurs in list
@@ -219,11 +228,14 @@ pop(obj=list[-1]) - removes and returns last object from list
 remove(obj) - removes object from list
 reverse()
 sort([func]) - sorts objects of list, use compare func if given
+-----
 
 ### Tuples
 - sequence of immutable python objects, wrapped in parenthesis instead of brackets
 - any set of multiple objects that are comma separated and have no identifying symbols, default to tuples
   ex) 'abc', 1, 5.56, 'hello', 'world will default to a tuple
+
+-----
 
 ### Tuple Functions
 cmp(tuple1, tuple2)
@@ -232,9 +244,13 @@ max(tuple)
 min(tuple)
 tuple(seq) converts list into a tuple
 
+-----
+
 ### Dictionary
 - unique keys map to values
 - dictionary values have no restriction, may be any python value
+
+-----
 
 ### Dictionary Methods
 clear() - removes all elements  
@@ -248,6 +264,7 @@ setdefault(key, default=None)
 update(dict2) - adds dict2s key value pairs to dict1  
 values()   
 
+-----
 
 ### Date & Time
 - time module available; time.time() returns ticks since epoch (Jan 1 1970 12:00am)  
@@ -289,6 +306,8 @@ Mo Tu We Th Fr Sa Su
 28 29 30 31
 ```
 
+-----
+
 ### Time Functions  
 altzone() returns offset of local DST timezone, in seconds west of UTC  
 asctime([tupletime]) returns readable 24 character formatted time string  
@@ -301,6 +320,8 @@ sleep(secs) suspends the calling thread for seconds
 strftime(fmt[,tupletime]) returns string representation    
 time() returns current time since epoch float  
 tzset() resets the time conversion rules used by the library routines    
+
+-----
 
 ### Calendar Functions  
 calender(year,w=2,l=1c=6) returns multiline string representing calendar  
@@ -316,10 +337,14 @@ setfirstweekday(weekday)
 timegm(tupletime)  
 weekday(year,month,day) return weekday code for date  
 
+-----
+
 ### Other Time Modules
 - datetime module  
 - pytz module  
 - dateutil module  
+
+-----
 
 ### Functions
 - all arguments in Python are passed by reference  
