@@ -434,6 +434,20 @@ print content
 	- in root of directory, create a file __init__.py such that it imports all components to be exposed  
 	- then, the directory MyModules can be imported as 'import MyModules' and all individual files/components in MyModules/ will be made available  
 
+-----
+
+### Files I/O
+- two built in functions to read text from std input:  
+	- raw_input([prompt]) - reads one line of std input and returns as string
+	- input([prompt]) - same as above, except it assumes input is valid Python expression and returns evaluated result  
+```python
+  str = raw_input('Enter your name: ')
+  print 'You entered: ', str
+
+  str = input('Enter an expression to be evaluated: ' )
+  print 'You entered: ', str
+```
+
 
 
 
