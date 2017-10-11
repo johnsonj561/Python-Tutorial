@@ -1,4 +1,4 @@
-### Levin-Cook Theorem:
+### Cook-Levin Theorem:
 1. SAT is in NP Complete
 2. 3SAT is in NP Complete
 
