@@ -9,12 +9,12 @@
 - interactive
 - object oriented
 - high level
-- created by Guido Rossum between 1985 - 19990
+- created by Guido Rossum between 1985 - 1990
 - available under GNU GPL
 
 -----
 
-### Identifieers
+### Identifiers
 - case sensitive
 - beginning with underscore _ denotes private
 - beginning with 2 undercores __ denotes strongly private
@@ -29,9 +29,9 @@
 -----
 
 ### Lines & Spaces
-- line continuation char (\) denotes a continued line
-	- total = item_one + \
-		  item_two + \
+- line continuation char (\\) denotes a continued line
+	- total = item_one + \\
+		  item_two + \\
  		  item_three
 - triple quotes are used to span string across multi line
 - semi colon can be used to place multiple statements on the same line
