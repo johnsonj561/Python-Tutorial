@@ -165,90 +165,90 @@ m.n	m is the min total width and n is number of digits to display after decimal 
 
 -----
 
-### Built in String methods
-capitalize()
-center(width, fillchar) - returns a space padded string with original string centered to a total of width columns
-count(str, beg=0, end=len(str)) - returns total occurences of str within substring
-decode(encoding)
-encode(encoding)
-endswith(suffic, beg=0, end=len(str)) - returns true if substring ends with suffix
-expandtabs(tabsize=8) - expands tabs in string to multiple spaces
-find(str, beg=0, end=len(str)) - returns starting index of str, or -1 if does not exist
-isalnum() - returns true if string has at least 1 character and all characters are alphanumeric
-isalpha() - returns true if string has at least 1 character and all characters are alphabetic
-isdigit()
-islower()
-isnumeric()
-isspace()
-istitle()
-isupper()
-join(seq) - merge string representations of elements in a sequence into a string
-len(string)
-ljust(width[, fillchar]) - returns space padded string with orig string left justified
-lower()
-lstrp() - removes leading whitespace in string
-maketrans() - returns translation table to be used in translate function
-max(str) - returns max alphabetical char from string
-min(str) - returns min alpha char
-replace(old, new [, max]) - replaces all occureneces of old with new, or at most max occurences if max deined
-rfind(str, beg=0, end=len(str)) - same as find, but searches backwards
-rjust(width [, fillchar])
-rstrip()
-split(str="", num=string.count(str)) - splits string according to delimeter str (or space), returns list of substrings, split inti at most num substrings
-splitlines(num=string.count('\n')) - splits string at all newlines
-startswith(str, beg=0, end=len(str))
-strip([chars])
-swapcase()
-title() - returns titlecased version of string
-upper()
-zfill(width) - intended for numbers, returns leftpadded original string
-isdecimal()
+### Built in String methods  
+capitalize()  
+center(width, fillchar) - returns a space padded string with original string centered to a total of width columns  
+count(str, beg=0, end=len(str)) - returns total occurences of str within substring  
+decode(encoding)  
+encode(encoding)  
+endswith(suffic, beg=0, end=len(str)) - returns true if substring ends with suffix  
+expandtabs(tabsize=8) - expands tabs in string to multiple spaces  
+find(str, beg=0, end=len(str)) - returns starting index of str, or -1 if does not exist  
+isalnum() - returns true if string has at least 1 character and all characters are alphanumeric  
+isalpha() - returns true if string has at least 1 character and all characters are alphabetic  
+isdigit()  
+islower()  
+isnumeric()  
+isspace()  
+istitle()  
+isupper()  
+join(seq) - merge string representations of elements in a sequence into a string  
+len(string)  
+ljust(width[, fillchar]) - returns space padded string with orig string left justified  
+lower()  
+lstrp() - removes leading whitespace in string  
+maketrans() - returns translation table to be used in translate function  
+max(str) - returns max alphabetical char from string  
+min(str) - returns min alpha char  
+replace(old, new [, max]) - replaces all occureneces of old with new, or at most max occurences if max deined  
+rfind(str, beg=0, end=len(str)) - same as find, but searches backwards  
+rjust(width [, fillchar])  
+rstrip()  
+split(str="", num=string.count(str)) - splits string according to delimeter str (or space), returns list of substrings, split inti at most num substrings  
+splitlines(num=string.count('\n')) - splits string at all newlines  
+startswith(str, beg=0, end=len(str))  
+strip([chars])  
+swapcase()  
+title() - returns titlecased version of string  
+upper()  
+zfill(width) - intended for numbers, returns leftpadded original string  
+isdecimal()  
 
 -----
 
 ### List Operations
-len(list) - length
-[1, 2, 3] + [4, 5, 6] = [1, 2, 3, 4, 5, 6]
-['hi'] * 2 = ['hi', 'hi']
-3 in [1, 2, 3] = true
-for x in [1, 2, 3] - iterates list
-cmp(list1, list2)
-max(list)
-min(list)
-list(seq) - converts tuple into list
+len(list) - length    
+[1, 2, 3] + [4, 5, 6] = [1, 2, 3, 4, 5, 6]  
+['hi'] * 2 = ['hi', 'hi']  
+3 in [1, 2, 3] = true  
+for x in [1, 2, 3] - iterates list  
+cmp(list1, list2)  
+max(list)  
+min(list)  
+list(seq) - converts tuple into list  
 
 -----
 
 ### List Methods
-append(obj) - appends object to list
-count(obj) - returns count of how many time obj occurs in list
-extend(seq) - appends contents to list
-index(obj) - returns lowest index in list that obj appears
-pop(obj=list[-1]) - removes and returns last object from list
-remove(obj) - removes object from list
-reverse()
-sort([func]) - sorts objects of list, use compare func if given
+append(obj) - appends object to list    
+count(obj) - returns count of how many time obj occurs in list  
+extend(seq) - appends contents to list  
+index(obj) - returns lowest index in list that obj appears  
+pop(obj=list[-1]) - removes and returns last object from list  
+remove(obj) - removes object from list  
+reverse()  
+sort([func]) - sorts objects of list, use compare func if given  
 -----
 
-### Tuples
-- sequence of immutable python objects, wrapped in parenthesis instead of brackets
-- any set of multiple objects that are comma separated and have no identifying symbols, default to tuples
-  ex) 'abc', 1, 5.56, 'hello', 'world will default to a tuple
+### Tuples  
+- sequence of immutable python objects, wrapped in parenthesis instead of brackets   
+- any set of multiple objects that are comma separated and have no identifying symbols, default to tuples  
+  ex) 'abc', 1, 5.56, 'hello', 'world will default to a tuple  
 
 -----
 
 ### Tuple Functions
-cmp(tuple1, tuple2)
-len(tuple)
-max(tuple)
-min(tuple)
-tuple(seq) converts list into a tuple
+cmp(tuple1, tuple2)  
+len(tuple)  
+max(tuple)  
+min(tuple)  
+tuple(seq) converts list into a tuple  
 
 -----
 
 ### Dictionary
-- unique keys map to values
-- dictionary values have no restriction, may be any python value
+- unique keys map to values  
+- dictionary values have no restriction, may be any python value  
 
 -----
 
